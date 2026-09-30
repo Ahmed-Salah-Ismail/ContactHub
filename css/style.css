@@ -1,0 +1,809 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  background-color: #7c3aed !important;
+  border-color: #7c3aed !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+  display: flex;
+  gap: 5px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #6d28d9 !important; /* درجة أغمق سِنة عند الضغط أو التمرير */
+  border-color: #6d28d9 !important;
+  box-shadow: 0 0 0 0.25rem rgba(124, 58, 237, 0.25) !important;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f8fafc !important; /* درجة رمادي مائلة للأزرق الفاتح جداً زي التصميم */
+}
+
+header {
+  max-height: 6rem;
+  width: 100%;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  /* background-color: rgb(247, 244, 244); */
+  gap: 30rem;
+  align-items: center;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+}
+
+header .left-header {
+  display: flex;
+  width: 30%;
+  gap: 1rem;
+}
+
+header .left-header .logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+  background-color: rgb(124, 58, 237);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .left-header .logo svg,
+header .left-header .logo i {
+  font-size: 40px;
+  width: 30px;
+  height: 30px;
+  fill: white;
+  color: white;
+}
+
+header .left-header .contant {
+  display: flex;
+  flex-direction: column;
+}
+
+header .left-header .contant h2 {
+  color: black;
+  font-weight: bold;
+}
+
+header .left-header .contant h2 span {
+  color: rgb(124, 58, 237);
+}
+
+header .left-header .contant h3 {
+  font-size: 14px;
+  color: #666;
+  margin-top: -0.5rem;
+}
+
+header .right-header {
+  display: flex;
+  gap: 2rem;
+  width: 22%;
+}
+
+header .right-header .icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header .right-header .btn-1 .contant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+header .right-header .btn-1 .btn {
+  height: 40px;
+}
+
+header .right-header .btn-1 .contant h2 {
+  font-size: 15px;
+  margin: 0;
+}
+header .right-header .btn-1 .contant svg,
+header .right-header .btn-1 .contant i {
+  font-size: 13px;
+}
+
+header .right-header .icons svg,
+header .right-header .icons i {
+  color: #64748b;
+}
+
+header .right-header .photo img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.sec-1 {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.sec-1 .d-grid .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sec-1 .d-grid .card .icon {
+  background-color: #2563eb;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+  display: flex;
+}
+.sec-1 .d-grid .card .icon svg,
+.sec-1 .d-grid .card .icon i {
+  margin: auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #ffffff;
+}
+
+.sec-1 .d-grid .card .contant h2 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.sec-1 .d-grid .card .contant span {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.sec-1 .d-grid .card .icon-2 {
+  background-color: #f59e0b;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+  display: flex;
+}
+
+.sec-1 .d-grid .card .icon-2 svg,
+.sec-1 .d-grid .card .icon-2 i {
+  margin: auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #ffffff;
+}
+
+.sec-1 .d-grid .card .icon-3 {
+  background-color: #e11d48;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+  display: flex;
+}
+
+.sec-1 .d-grid .card .icon-3 svg,
+.sec-1 .d-grid .card .icon-3 i {
+  margin: auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #ffffff;
+}
+
+.sec-2 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  /* flex-direction: row; */
+  flex-flow: row wrap;
+  margin-top: 3rem;
+  gap: 1.5rem;
+}
+
+.sec-2 .flex-1 {
+  flex-grow: 2;
+}
+
+.sec-2 .flex-1 .text h2 {
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+.sec-2 .flex-1 .text p {
+  font-size: 16px;
+  color: #666;
+}
+
+.sec-2 .flex-1 .search input {
+  border-radius: 10px;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sec-2 aside {
+  flex-grow: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* cards */
+.sec-2 .group .group-contant {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  border-radius: 20px;
+}
+
+.sec-2 .group .contant-card {
+  background-color: #eff5f5 !important;
+  border-radius: 20px;
+  padding: 1rem;
+  min-height: 100px;
+}
+
+/* Item Start / Header */
+.sec-2 .group .contant-card .item-start {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.sec-2 .group .contant-card .item-start .top-card {
+  position: relative;
+}
+
+.sec-2 .group .contant-card .item-start .top-card .char {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(244, 63, 94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.sec-2 .group .contant-card .item-start .top-card .char h2 {
+  margin: 0;
+  color: white;
+  font-size: 22px;
+}
+
+.sec-2 .group .contant-card .item-start .top-card .absolute {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+}
+
+.sec-2 .group .contant-card .item-start .top-card .absolute .icon-top {
+  width: 25px;
+  height: 25px;
+  background-color: #f59e0b;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-2 .group .contant-card .item-start .top-card .absolute .icon-top i,
+.sec-2 .group .contant-card .item-start .top-card .absolute .icon-top svg {
+  color: white;
+  font-size: 10px;
+}
+
+.sec-2 .group .contant-card .item-start .top-card .absolute-2 {
+  position: absolute;
+  top: 40px;
+  right: -5px;
+}
+
+.sec-2 .group .contant-card .item-start .top-card .absolute-2 .icon-bottom {
+  width: 25px;
+  height: 25px;
+  background-color: #e11d48;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-2 .group .contant-card .item-start .top-card .absolute-2 .icon-bottom i,
+.sec-2 .group .contant-card .item-start .top-card .absolute-2 .icon-bottom svg {
+  color: white;
+  font-size: 10px;
+}
+
+.sec-2 .group .contant-card .item-start .flex-1 h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.sec-2 .group .contant-card .item-start .flex-1 .flex-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sec-2 .group .contant-card .item-start .flex-1 .flex-item .icon {
+  width: 25px;
+  height: 25px;
+  background-color: #a5c2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.sec-2 .group .contant-card .item-start .flex-1 .flex-item .icon i,
+.sec-2 .group .contant-card .item-start .flex-1 .flex-item .icon svg {
+  color: #2563eb;
+  font-size: 12px;
+}
+
+.sec-2 .group .contant-card .item-start .flex-1 .flex-item p {
+  color: #666;
+  margin: 0;
+}
+
+/* Contact Details */
+.sec-2 .group .contant-card .contact-details {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sec-2 .group .contant-card .contact-details .details-1 {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.sec-2 .group .contant-card .contact-details .details-1 .icon-email {
+  width: 25px;
+  height: 25px;
+  background-color: #c9bffb;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-2 .group .contant-card .contact-details .details-1 .icon-email i,
+.sec-2 .group .contant-card .contact-details .details-1 .icon-email svg {
+  color: #7c3aed;
+  font-size: 12px;
+}
+
+.sec-2 .group .contant-card .contact-details .details-1 p {
+  margin: 0;
+  color: #666;
+}
+
+.sec-2 .group .contant-card .contact-details .details-2 .icon-email {
+  background-color: #dcfce7;
+}
+
+.sec-2 .group .contant-card .contact-details .details-2 .icon-email i,
+.sec-2 .group .contant-card .contact-details .details-2 .icon-email svg {
+  color: #059669;
+  font-size: 12px;
+}
+
+/* End Card / Badge */
+.sec-2 .group .contant-card .end-card {
+  width: fit-content;
+  padding: 2px 10px;
+  background-color: #fef3c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 8px;
+}
+
+.sec-2 .group .contant-card .end-card span h2 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #d97706;
+  margin: 0;
+}
+
+/* Footer */
+.sec-2 .group .contant-card .footer {
+  width: 100%;
+  background-color: transparent;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-bottom: -1rem;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #e5e7eb;
+  margin-top: auto !important;
+}
+
+.sec-2 .group .contant-card .footer .right-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.sec-2 .group .contant-card .footer .right-icons .icon-phone,
+.sec-2 .group .contant-card .footer .right-icons .icon-phone .icon {
+  width: 30px;
+  height: 30px;
+  background-color: #e1ffec;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.sec-2 .group .contant-card .footer .right-icons .icon-phone:hover {
+  background-color: #67f8ca;
+}
+
+.sec-2 .group .contant-card .footer .right-icons .icon-phone i,
+.sec-2 .group .contant-card .footer .right-icons .icon-phone svg {
+  color: #059669;
+}
+
+.sec-2 .group .contant-card .footer .right-icons .icon-email {
+  width: 30px;
+  height: 30px;
+  background-color: #c9bffb;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.sec-2 .group .contant-card .footer .right-icons .icon-email:hover {
+  background-color: #a78bfa;
+}
+
+.sec-2 .group .contant-card .footer .right-icons .icon-email i,
+.sec-2 .group .contant-card .footer .right-icons .icon-email svg {
+  color: #7c3aed;
+}
+
+.sec-2 .group .contant-card .footer .left-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* التنسيق المشترك لكل الأزرار */
+.sec-2 .group .contant-card .footer .left-icon .icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* 1. أيقونة المفضلة (Favorite - Amber/Yellow) */
+/* التنسيق الأساسي للأيقونة */
+.left-icon .icon.fav {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #94a3b8; /* لون رمادي خفيف لما تكون مش متفعلة */
+}
+
+/* شكل الأيقونة لما تكون Active */
+.left-icon .icon.fav.active {
+  background-color: #fef9c3; /* الخلفية الصفراء الفاتحة */
+  color: #eab308; /* اللون الأصفر الذهبي للنجمة */
+}
+
+/* تغيير الحجم شوية */
+.left-icon .icon.fav.active i {
+  font-size: 1.1rem;
+}
+
+.sec-2 .group .contant-card .footer .left-icon .fav:hover {
+  background-color: #fde68a;
+  color: #d97706;
+}
+
+/* 2. أيقونة الطوارئ (Emergency - Rose/Red) */
+/* التنسيق الأساسي لأيقونة الطوارئ */
+.left-icon .icon.emg {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #94a3b8; /* لون رمادي هادي لما تكون غير مفعلة */
+}
+
+/* شكل الأيقونة لما تكون Active */
+.left-icon .icon.emg.active {
+  background-color: #ffe4e6; /* خلفية وردية فاتحة جداً */
+  color: #f43f5e; /* لون أحمر/وردي صريح للقلب */
+}
+
+/* مقاس الأيقونة */
+.left-icon .icon.emg.active i {
+  font-size: 1.1rem;
+}
+.sec-2 .group .contant-card .footer .left-icon .emg:hover {
+  background-color: #fecdd3;
+  color: #be123c;
+}
+
+/* 3. أيقونة التعديل (Edit - Blue) */
+.sec-2 .group .contant-card .footer .left-icon .ed {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+.sec-2 .group .contant-card .footer .left-icon .ed:hover {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+/* 4. أيقونة الحذف (Delete - Gray to Danger) */
+.sec-2 .group .contant-card .footer .left-icon .delet {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+.sec-2 .group .contant-card .footer .left-icon .delet:hover {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+/* ضبط حجم الأيقونات الداخلية */
+.sec-2 .group .contant-card .footer .left-icon .icon i,
+.sec-2 .group .contant-card .footer .left-icon .icon svg {
+  font-size: 13px;
+}
+
+/* aside */
+/* الحاوية الخارجية للكارت */
+.side-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  border: 1px solid #f1f5f9;
+}
+
+/* الرأس المشترك */
+.side-card-header {
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fav-header {
+  background-color: #fffbeb; /* أصفر/كريمي هادي */
+}
+
+.emg-header {
+  background-color: #fff1f2; /* أحمر وردي هادي جداً */
+}
+
+/* أيقونات الهيدر */
+.header-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.fav-icon {
+  background-color: #f59e0b;
+  box-shadow: 0 6px 12px rgba(245, 158, 11, 0.25);
+}
+
+.emg-icon {
+  background-color: #e11d48;
+  box-shadow: 0 6px 12px rgba(225, 29, 72, 0.25);
+}
+
+.header-text h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.header-text p {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* جسم القائمة */
+.side-card-body {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* عناصر جهات الاتصال */
+.side-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+/* تأثير الـ Hover على مستوى كل كارت */
+.favorites-card .side-item:hover {
+  background-color: #fffbeb;
+}
+
+.emergency-card .side-item:hover {
+  background-color: #fff1f2;
+}
+
+/* الأفاتار والمعلومات */
+.avatar-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  color: rgb(244, 244, 222);
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  background-color: #f43f5e;
+}
+
+.rose-avatar {
+  background-color: #f43f5e;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.item-info p {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* أزرار الاتصال */
+.side-call-btn {
+  width: 36px;
+  height: 36px;
+  background-color: #dcfce7;
+  color: #059669;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.side-call-btn i {
+  font-size: 13px;
+}
+
+/* زر اتصال الطوارئ الافتراضي */
+.emg-call-btn {
+  background-color: #ffe4e6;
+  color: #e11d48;
+}
+
+/* حالة Hover للأزرار */
+.favorites-card .side-item:hover .side-call-btn {
+  background-color: #059669;
+  color: #ffffff;
+}
+
+.emergency-card .side-item:hover .emg-call-btn {
+  background-color: #e11d48;
+  color: #ffffff;
+}
+
+/* Modal */ /* الأفاتار الأزرق الكبير */
+.avatar-placeholder {
+  width: 90px;
+  height: 90px;
+  background-color: #2563eb;
+  border-radius: 50%;
+}
+
+/* ستايل الـ Inputs الفاتح مع الحواف الناعمة */
+.custom-input {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.custom-input:focus {
+  background-color: #ffffff;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+/* زر الحفظ البنفسجي */
+.btn-save {
+  background-color: #6366f1;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-save:hover {
+  background-color: #4f46e5;
+}
+
+/* التنسيق المشترك لكل الأزرار */
+.sec-2 .group .contant-card .end-card {
+  min-height: 28px;
+  margin-top: 1rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  width: fit-content;
+}
+
+/* تلوين الخلفية فقط لما يكون جواه محتوى */
+.sec-2 .group .contant-card .end-card:has(span) {
+  background-color: #fef3c7;
+  padding: 2px 10px;
+  border-radius: 5px;
+}
